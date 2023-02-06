@@ -27,6 +27,7 @@ function addNumbers( firstNumber, secondNumber ) {
   let sum = firstNumber + secondNumber;
   return `The sum of ${firstNumber} and ${secondNumber} is: ${sum}`;
 }
+
 console.log('Test - should give sum of two numbers:', addNumbers(2, 6));
 
 
@@ -68,7 +69,7 @@ console.log('Test - Should return 2:', getLast([5, 3, 6, 2]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ){
   for ( let i = 0; i < array.length; i++ ) {
-    if(value === array[i]) {
+    if( value === array[i] ) {
       return true;
     }
   }
@@ -117,7 +118,7 @@ function allPositives( array ) {
     }
   }
 
-  if (positives.length > 0) {
+  if ( positives.length > 0 ) {
     return positives;
   }
   return [];
@@ -134,7 +135,7 @@ console.log('Should return [2, 4, 6]:', allPositives([2, 4, 6, -8]));
 // Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.
 function addUp( number ) {
   let sum = 0;
-  for (let i = 1; i <= number; i++) {
+  for ( let i = 1; i <= number; i++ ) {
     sum += i;
   }
   return sum;
